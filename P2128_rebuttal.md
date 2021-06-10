@@ -6,7 +6,7 @@ P2128 rebuttal
 
 ```text
 Will Wray  
-May 14th, 2021
+June 10th, 2021
 
 Document: n2740  
 Audience: SG22: WG14 and WG21 LEWG  
@@ -59,8 +59,6 @@ Appendices
 ----------
 
 * [Span Mechanics](#span-mechanics)
-* DPCE Appendix 12
-* References
 
 Introduction
 ------------
@@ -96,7 +94,7 @@ The secondary question is:
 
 This is addressed in the final sections. The Case Summary is an outline.
 We hope our analysis can advance the 'state of array'. Please comment if
-you see errors or ommissions.
+you see errors or omissions.
 ```
 
 P2128R5 Summary
@@ -372,7 +370,7 @@ then we consider below that extended a[i...] yields extended lvalues;
 either a general collective lvalue or a special-case span of lvalues
 when i... is a sequence of consecutive integers.
 
-The language has more lattitude in handling builtin operator yields than
+The language has more latitude in handling builtin operator yields than
 it has for function returns; collective semantics for collective lvalues
 is one possibility explored below.
 
@@ -411,7 +409,7 @@ When there's no subobject to be referenced, or contiguous span to view,
 then it's necessary to fall back to a proxy-reference return.
 
 Proxy-reference return types open the door to the full power of abstract
-indexing return-type possiblities.
+indexing return-type possibilities.
 ```
 
 Proxies have pitfalls
@@ -857,7 +855,7 @@ A compile-error is better than an erroneous result at runtime, as below:
 Here, array is accepted as a std::array element type then initialization
 and copy work fine as builtin aggregate operations, but comparisons fail
 (C++20 defaulted comparison operators would work correctly in this case)
-(but may be an ABI break?). Similiar applies to pair and tuple.
+(but may be an ABI break?). Similar applies to pair and tuple.
 ```
 
 Why are nested arrays unflattenable?
